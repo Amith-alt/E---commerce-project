@@ -32,6 +32,7 @@ import jakarta.servlet.http.HttpSession;
 						req.setAttribute("status", "Thank You for Contacting");
 						RequestDispatcher rd=req.getRequestDispatcher("Contact.jsp");
 						rd.forward(req, resp);
+						System.out.println("hi");
 					}
 					else if(status.equals("failure")) {
 						req.setAttribute("status", "Please Try Again Later");
